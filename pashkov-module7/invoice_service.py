@@ -18,7 +18,6 @@ class ChargeResult:
     reason: Optional[str] = None
 
 
-# Протоколы для зависимостей (для типизации)
 class InvoiceRepo(Protocol):
     def get_by_id(self, invoice_id: int) -> Optional[Invoice]: ...
     def mark_paid(self, invoice_id: int, transaction_id: str) -> None: ...
@@ -49,28 +48,22 @@ class InvoiceService:
             LookupError: счет не найден
             ValueError: сумма счета <= 0
         """
-        # Получаем счет
         invoice = self.invoice_repo.get_by_id(invoice_id)
         if invoice is None:
             raise LookupError(f"invoice not found: {invoice_id}")
         
-        # Проверяем статус
         if invoice.status == "paid":
             return "already_paid"
         
-        # Проверяем сумму
         if invoice.amount <= 0:
             raise ValueError(f"amount must be positive, got: {invoice.amount}")
         
-        # Пытаемся провести платеж
         try:
             result = self.payment_gateway.charge(invoice.customer_id, invoice.amount)
         except TimeoutError:
-            # Таймаут - помечаем на повтор
             self.invoice_repo.mark_retry(invoice_id)
             return "retry"
         
-        # Обрабатываем результат платежа
         if result.ok:
             self.invoice_repo.mark_paid(invoice_id, result.transaction_id or "unknown")
             return "paid"
