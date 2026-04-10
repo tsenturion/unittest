@@ -1,5 +1,5 @@
 import requests
-
+ #
 
 class CatalogTimeoutError(Exception):
     """Таймаут при запросе к каталогу"""

@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from app.config import load_config
 
-
+# 
 class TestLoadConfig(unittest.TestCase):
     """Тесты для чтения конфигурационного файла"""
     
