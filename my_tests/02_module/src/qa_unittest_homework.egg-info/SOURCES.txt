@@ -1,0 +1,8 @@
+pyproject.toml
+src/netutils/__init__.py
+src/netutils/ports.py
+src/qa_unittest_homework.egg-info/PKG-INFO
+src/qa_unittest_homework.egg-info/SOURCES.txt
+src/qa_unittest_homework.egg-info/dependency_links.txt
+src/qa_unittest_homework.egg-info/top_level.txt
+tests/test_ports.py
