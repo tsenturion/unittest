@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netutils"
+version = "0.1.0"
+description = "Network utilities for port validation"
+authors = [{name = "Student"}]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+test = ["coverage>=7.0"]
