@@ -1,0 +1,9 @@
+pyproject.toml
+src/qa_unittest_skeleton.egg-info/PKG-INFO
+src/qa_unittest_skeleton.egg-info/SOURCES.txt
+src/qa_unittest_skeleton.egg-info/dependency_links.txt
+src/qa_unittest_skeleton.egg-info/top_level.txt
+src/qautils/__init__.py
+src/qautils/math_utils.py
+src/qautils/tests/__init__.py
+src/qautils/tests/test_math_utils.py
