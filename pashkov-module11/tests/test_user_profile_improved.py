@@ -24,6 +24,7 @@ class TestBuildProfileImproved(unittest.TestCase):
             },
         ]
 
+
         for case in cases:
             with self.subTest(case=case["case"], payload=case["payload"]):
                 self.assertEqual(

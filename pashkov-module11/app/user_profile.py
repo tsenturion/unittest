@@ -15,7 +15,6 @@ def normalize_username(raw: str) -> str:
         )
     return clean
 
-
 def build_profile(payload: dict) -> dict:
     logger.info("building profile for user_id=%s", payload["id"])
     username = normalize_username(payload["username"])

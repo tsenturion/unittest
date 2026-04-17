@@ -15,7 +15,6 @@ class TestNoise(unittest.TestCase):
         print("debug: ready!", file=sys.stderr)
         self.assertTrue(True)
 
-
 class TestBuildProfileInitial(unittest.TestCase):
     def test_examples(self):
         cases = [
