@@ -1,0 +1,8 @@
+pyproject.toml
+src/qautils/__init__.py
+src/qautils/slugify.py
+src/qautils.egg-info/PKG-INFO
+src/qautils.egg-info/SOURCES.txt
+src/qautils.egg-info/dependency_links.txt
+src/qautils.egg-info/top_level.txt
+tests/test_slugify.py
