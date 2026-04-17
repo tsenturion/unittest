@@ -1,0 +1,8 @@
+pyproject.toml
+src/qa_unittest_homework.egg-info/PKG-INFO
+src/qa_unittest_homework.egg-info/SOURCES.txt
+src/qa_unittest_homework.egg-info/dependency_links.txt
+src/qa_unittest_homework.egg-info/top_level.txt
+src/qautils/__init__.py
+src/qautils/slugify.py
+tests/test_slugify.py
