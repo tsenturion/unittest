@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: netutils
+Version: 0.1.0
+Summary: Network utilities for port validation
+Author: Student
+Requires-Python: >=3.8
+Provides-Extra: test
+Requires-Dist: coverage>=7.0; extra == "test"
