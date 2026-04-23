@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: qa-unittest-homework
+Version: 0.1.0
+Summary: Homework project for unittest practice
+Author: Student
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
